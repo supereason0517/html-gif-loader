@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <div id="loader"></div>
+   <h1>Hello..</h1>
+   <script>
+       function hideLoader() {
+         //    Grabbing the loader Element
+         const loader = document.querySelector('#loader');
+         setTimeout(function() {
+            //  making its opacity 0
+            loader.style.opacity = 0;
+         }, 1100) // 3500 = 3.5 seconds ( 1000 = 1 seconds )
+       }
+    //    remeber to put this so that it will call the function and then it will work
+       hideLoader();
+   </script>
